@@ -24,7 +24,7 @@ public class Building {
     @JoinColumn(name = "report_id")
     private Report report;
 
-    @OneToMany(mappedBy = "building", fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(mappedBy = "building", fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
     private List<Activity> activities = new ArrayList<>();
 
     public Building() {

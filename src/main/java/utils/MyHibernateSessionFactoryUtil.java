@@ -4,18 +4,15 @@ import entities.Activity;
 import entities.Building;
 import entities.Report;
 import entities.User;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-import java.util.function.Consumer;
 
 public class MyHibernateSessionFactoryUtil {
     public static SessionFactory sessionFactory;
 
-    public MyHibernateSessionFactoryUtil() {
+    public static void setSessionFactory(SessionFactory mySessionFactory) {
+        sessionFactory = mySessionFactory;
     }
 
     public static SessionFactory getSessionFactory() {
@@ -34,9 +31,9 @@ public class MyHibernateSessionFactoryUtil {
         }
         return sessionFactory;
     }
-    public static void closeSessionFactory(){
-        if (sessionFactory!=null) sessionFactory.close();
-    }
 
+    public static void closeSessionFactory() {
+        if (sessionFactory != null) sessionFactory.close();
+    }
 
 }

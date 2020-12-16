@@ -1,14 +1,8 @@
 package dao;
-
-import entities.Activity;
-import entities.Building;
-import entities.Report;
-import entities.User;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import utils.MyHibernateSessionFactoryUtil;
 
 import java.util.List;
@@ -16,9 +10,6 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class AbstractDao<T> {
-
-
-
 
     public List<T> performFetchingListInPersistenceContext(Function<Session, List<T>> function) {
         Session session = MyHibernateSessionFactoryUtil.getSessionFactory().openSession();

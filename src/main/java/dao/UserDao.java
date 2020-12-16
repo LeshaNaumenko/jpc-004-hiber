@@ -22,7 +22,6 @@ public class UserDao extends AbstractDao<User> {
         return user;
     }
 
-
     public List<Activity> findAllActivitiesByUserId(int id) {
         Session session = MyHibernateSessionFactoryUtil.getSessionFactory().openSession();
         List<Activity> allActivities = new ArrayList<>();

@@ -1,0 +1,14 @@
+2020-12-17 01:24:23 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2020-12-17 01:24:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2020-12-17 01:24:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-12-17 01:24:24 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-12-17 01:24:24 INFO  pooling:126 - HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:~/test]
+2020-12-17 01:24:24 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****}
+2020-12-17 01:24:24 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2020-12-17 01:24:24 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-12-17 01:24:24 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-17 01:24:26 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@63a5e46c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-12-17 01:24:26 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@49bd54f7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-12-17 01:24:26 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@46292372'
+2020-12-17 01:24:26 INFO  ActivityService:37 - All activity for user with id=1 and building with id=4 : [Activity{id=2, workName='Complete Rough Plumbing', price=300.0}, Activity{id=5, workName='Complete Rough Framing', price=5000.0}]
+2020-12-17 01:24:26 INFO  pooling:230 - HHH10001008: Cleaning up connection pool [jdbc:h2:~/test]

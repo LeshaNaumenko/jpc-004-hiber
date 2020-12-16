@@ -13,15 +13,6 @@ import java.util.List;
 
 public class ReportDao extends AbstractDao<Report> {
 
-    public List<Report> findAllReportForUser(Integer id) {
-        Session session = MyHibernateSessionFactoryUtil.getSessionFactory().openSession();
-        Query query = session.createQuery("From Report r where r.user.id = :id");
-        query.setParameter("id", id);
-        List<Report> reports = (List<Report>) query.list();
-        session.close();
-        return reports;
-    }
-
     public Report findById(int id) {
         return performFetchingInPersistenceContext((session) -> session.get(Report.class, id));
     }
