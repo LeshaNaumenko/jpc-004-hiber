@@ -39,11 +39,8 @@ class ReportServiceTest extends BaseTestClass {
 
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
-            // start a transaction
             transaction = session.beginTransaction();
-            // save the student objects
             session.save(user);
-            // commit transaction
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
